@@ -1,0 +1,237 @@
+:root {
+  --fontColor: #bfc1c8;
+  --bgColorBtn: #009ad8;
+  --bgColor: #1e202b;
+  --footerColor: #262936;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+nav .logo {
+  padding: 2.28rem;
+}
+
+nav .logo .imgLogo {
+  margin: 0;
+  padding: 0;
+}
+
+nav .logo .textLogo {
+  margin: 0;
+  padding: 0;
+}
+
+nav .logo .textLogo h1 {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav .logo .textLogo small {
+  color: var(--fontColor);
+  font-size: 0.6rem;
+}
+
+nav .menu ul li {
+  margin-left: 10px !important;
+  border: 2px solid transparent;
+  border-radius: 30px;
+}
+
+nav .menu ul li:hover {
+  border: 2px solid var(--bgColorBtn);
+  color: var(--bgColorBtn) !important;
+}
+
+nav .menu ul li:hover a {
+  color: var(--bgColorBtn) !important;
+}
+
+nav .menu ul li a {
+  padding: 0px 25px !important;
+  color: white;
+}
+
+.activeB {
+  border: 2px solid var(--bgColorBtn) !important;
+}
+
+.bgColor {
+  background-color: var(--bgColor);
+}
+
+input {
+  background-color: var(--bgColor) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  color: white !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #757575 !important;
+}
+
+input:-ms-input-placeholder {
+  color: #757575 !important;
+}
+
+input::-ms-input-placeholder {
+  color: #757575 !important;
+}
+
+input::placeholder {
+  color: #757575 !important;
+}
+
+input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+button {
+  background-color: var(--bgColorBtn) !important;
+  color: white !important;
+  border-radius: 30px !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.searchContainer {
+  position: relative;
+  background-image: url(../images/banner.png);
+  background-position: center center;
+  background-size: cover;
+  min-height: 350px;
+}
+
+.searchbar {
+  position: relative;
+  top: 6.6rem;
+}
+
+.searchbar input {
+  padding: 27px 50px 27px 27px;
+}
+
+.searchbar button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0 40px;
+  bottom: 5px;
+}
+
+.modefay {
+  top: auto;
+}
+
+.card-container {
+  position: relative;
+  top: -130px;
+}
+
+.card-container .card-header {
+  padding: 0px auto !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-bottom: none !important;
+}
+
+.card-container .headerText {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  color: var(--fontColor);
+}
+
+.card-container .clearBlu {
+  color: var(--bgColorBtn);
+  margin: 20px 0;
+}
+
+.card-container .cardS {
+  background-color: var(--footerColor);
+  padding: 0;
+}
+
+.card-container .cardM {
+  background-color: var(--bgColor);
+  padding: 0;
+}
+
+.card-container ul {
+  padding-left: 0;
+}
+
+.card-container ul li {
+  color: var(--fontColor);
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 50px;
+}
+
+.card-container ul li i {
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: var(--footerColor);
+}
+
+footer .sosial {
+  color: var(--bgColorBtn);
+  font-size: 1.3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 220px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .sosial {
+    padding-left: 0px;
+    padding-top: 40px;
+  }
+}
+
+footer .sosial a {
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--bgColor);
+}
+
+footer .sosial a:hover {
+  background-color: var(--bgColorBtn);
+  color: white;
+}
+
+footer p {
+  color: var(--fontColor);
+}

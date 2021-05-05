@@ -1,0 +1,185 @@
+:root {
+  --fontColor: #bfc1c8;
+  --bgColorBtn: #009ad8;
+  --bgColor: #1e202b;
+  --footerColor: #262936;
+}
+*{
+  font-family: sans-serif;
+}
+h2 {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+nav {
+  .logo {
+    padding: 2.28rem;
+    .imgLogo {
+      margin: 0;
+      padding: 0;
+    }
+    .textLogo {
+      margin: 0;
+      padding: 0;
+      h1 {
+        color: white;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+      small {
+        color: var(--fontColor);
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .menu {
+    ul {
+      li {
+        margin-left: 10px !important ;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        &:hover {
+          border: 2px solid var(--bgColorBtn);
+          color: var(--bgColorBtn) !important;
+
+          a {
+            color: var(--bgColorBtn) !important;
+          }
+        }
+        a {
+          padding: 0px 25px !important;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.activeB {
+  border: 2px solid var(--bgColorBtn) !important;
+}
+.bgColor {
+  background-color: var(--bgColor);
+}
+input {
+  background-color: var(--bgColor) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  color: white !important;
+  &::placeholder {
+    color: #757575 !important;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+button {
+  background-color: var(--bgColorBtn) !important;
+  color: white !important;
+  border-radius: 30px !important;
+}
+ul {
+  list-style: none;
+}
+.searchContainer {
+  position: relative;
+  background-image: url(../images/banner.png);
+  background-position: center center;
+  background-size: cover;
+  min-height: 350px;
+}
+.searchbar {
+  position: relative;
+  top: 6.6rem;
+
+  input {
+    padding: 27px 50px 27px 27px;
+  }
+  button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0 40px;
+    bottom: 5px;
+  }
+}
+.modefay {
+  top: auto;
+}
+
+.card-container {
+  position: relative;
+  top: -130px;
+
+  .card-header {
+    padding: 0px auto !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-bottom: none !important;
+  }
+  .headerText {
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: var(--fontColor);
+  }
+  .clearBlu {
+    color: var(--bgColorBtn);
+    margin: 20px 0;
+  }
+  .cardS {
+    background-color: var(--footerColor);
+    padding: 0;
+  }
+  .cardM {
+    background-color: var(--bgColor);
+    padding: 0;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      color: var(--fontColor);
+      font-weight: 300;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 50px;
+      i {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: var(--footerColor);
+  .sosial {
+    color: var(--bgColorBtn);
+    font-size: 1.3rem;
+    justify-content: space-between;
+    width: 220px;
+    @media only screen and (max-width: 768px) {
+      padding-left: 0px;
+      padding-top: 40px;
+    }
+    a {
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: var(--bgColor);
+      &:hover {
+        background-color: var(--bgColorBtn);
+        color: white;
+      }
+    }
+  }
+  p {
+    color: var(--fontColor);
+  }
+}
